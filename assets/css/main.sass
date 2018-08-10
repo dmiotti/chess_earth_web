@@ -1,0 +1,57 @@
+@import 'reset'
+@import 'variables'
+@import 'fonts'
+
+*
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  outline: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+html
+  background: $white
+
+body
+  font-family: "Moderat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-size: 20px
+  background: white
+
+  &.noscroll
+    overflow: hidden
+
+h1
+  font-size: 64px
+  line-height: 64px
+  font-weight: $weight-black
+  margin-bottom: 10px
+
+h2, .h2
+  font-size: 38px
+  line-height: 44px
+  font-weight: $weight-black
+  margin-bottom: 10px
+
+h3
+  font-size: 26px
+  line-height: 36px
+  font-weight: $weight-black
+  margin-bottom: 10px
+
+p
+  font-size: 18px
+  line-height: 25px
+
+  &.small
+    font-size: 16px
+    line-height: 22px
+
+  &.big
+    font-size: 20px
+    line-height: 30px
+
+    span
+      color: $blue
+
+strong
+  font-weight: $weight-black
+  color: $black
