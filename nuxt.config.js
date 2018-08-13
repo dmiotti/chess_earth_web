@@ -16,9 +16,19 @@ module.exports = {
     ],
   },
 
+  modules: [
+    '@nuxtjs/apollo'
+  ],
+
   css: [
     { src: '~assets/css/main.sass', lang: 'sass' }
   ],
+
+  apollo: {
+    clientConfigs: {
+      httpEndpoint: 'https://api.chess.earth/graphql'
+    }
+  },
 
   loading: { color: '#E9531D' },
 

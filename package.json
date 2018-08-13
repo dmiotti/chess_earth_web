@@ -13,10 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
-    "vue-style-loader": "^4.1.0",
+    "@nuxtjs/apollo": "^4.0.0-rc1",
+    "graphql-tag": "^2.9.2",
     "lodash": "^4.17.10",
-    "vue-i18n": "^7.7.0"
+    "nuxt": "^1.0.0",
+    "vue-i18n": "^7.7.0",
+    "vue-style-loader": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
