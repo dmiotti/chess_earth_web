@@ -1,16 +1,30 @@
 <template>
   <div class="container">
-    <h1>h1: Welcome</h1>
-    <h2>h2: Hello World</h2>
-    <h3>h3: Holà</h3>
-    <p class="big">p[big]: My name is <strong>David</strong>.</p>
-    <p>p: My name is <strong>David</strong>.</p>
-    <p class="small">p[small]: My name is <strong>David</strong>.</p>
+    <h1>Chess Earth</h1>
+    <h2>Next tournaments</h2>
+    <ul>
+      <li v-for="event in events" :key="event.id">
+        <p>{{ [event.name, event.startAt, event.endAt, event.address.city].join(' | ') }}</p>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
+import getEvents from '@/graphql/get-events.gql'
+
 export default {
+  data () {
+    return {
+      events: []
+    }
+  },
+
+  apollo: {
+    events: {
+      query: getEvents
+    }
+  }
 }
 </script>
 

@@ -26,7 +26,9 @@ module.exports = {
 
   apollo: {
     clientConfigs: {
-      httpEndpoint: 'https://api.chess.earth/graphql'
+      default: {
+        httpEndpoint: 'https://api.chess.earth/graphql'
+      }
     }
   },
 

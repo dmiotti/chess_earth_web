@@ -1,0 +1,21 @@
+query GetEvents {
+  events {
+    id
+    name
+    startAt
+    endAt
+    user {
+      email
+    }
+    address {
+      street
+      streetNumber
+      zipCode
+      country
+      city
+      countryCode
+      lat
+      lng
+    }
+  }
+}
